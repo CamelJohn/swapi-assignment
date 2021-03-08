@@ -1,0 +1,45 @@
+.BarWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  text-align: center;
+  font-family: Arial;
+  user-select: none;
+}
+
+.Bar {
+  width: 10em;
+  display: 'flex';
+  flex-direction: 'column';
+  border: solid 1px rgb(170, 141, 218);
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  background: linear-gradient(-135deg, rgba(101,176,255,1) 42%, rgba(101,140,255,1) 69%, rgba(106,101,255,1) 81%);
+}
+
+.Bar:hover {
+  cursor: pointer;
+  background: linear-gradient(-135deg, rgba(106,101,255,0.5) 42%, rgba(101,140,255,0.5) 69%, rgba(101,176,255,0.5) 81%);
+  box-shadow: 1px 2px 15px rgba(106,101,255,0.5), 2px 4px 30px rgba(101,140,255,0.5), 4px 8px 60px rgba(101,176,255,0.5);
+  z-index: 1;
+}
+
+.Bar:hover .Popultaion {
+  color: white;
+  text-shadow: 1px 2px 10px white;
+  font-weight: bold;
+  transform: translateY(-75px);
+  transition: transform 1s;
+}
+
+.Label {
+  font-weight: bold;
+  color: white;
+  text-shadow: 1px 2px 15px rgba(106,101,255,0.5), 2px 4px 30px rgba(101,140,255,0.5), 4px 8px 60px rgba(101,176,255,0.5);
+}
+
+.Popultaion {
+  transform: translateY(15px);
+  z-index: -1;
+  color: transparent;
+}

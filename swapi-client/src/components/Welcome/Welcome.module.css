@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500;700&display=swap');
+
+@font-face {
+  font-family: 'Hollow';
+  src: url('../../fonts/StarJediHollow-A4lL.woff2') format('woff2');
+}
+
+.wrapper {
+  /* background: rgb(20, 20, 20); */
+  overflow: hidden;
+  font-family: 'Roboto';
+  margin: 50% 0 0 0;
+  position: relative;
+}
+
+.wrapper::after {
+  content: '';
+  position: fixed;
+  top: 10;
+  width: 100%;
+  height: 50%;
+  /* background: linear-gradient(
+    180deg,
+    rgba(20, 20, 20, 1) 40%,
+    rgba(20, 20, 20, 0) 100%
+  ); */
+}
+
+h1 {
+  font-family: 'Hollow', 'Roboto', sans-serif;
+}
+
+.wrapper {
+  display: flex;
+  height: 100%;
+  width: 60%;
+  margin: 0 auto;
+  perspective: 450px;
+}
+
+.scroll-text {
+  color: #ffc909;
+  font-size: 3vw;
+  line-height: 1.5em;
+  font-weight: bold;
+  text-align: justify;
+  position: relative;
+  animation: scroll 120s linear forwards;
+}
+
+h1,
+h2 {
+  text-align: center;
+}
+
+@keyframes scroll {
+  from {
+    top: 0;
+    transform: translateZ(0) rotateX(20deg);
+  }
+  to {
+    top: -7500px;
+    transform: translateZ(-2500px) rotateX(21deg);
+  }
+}
+
+.start {
+  position: fixed;
+  top: -1vh;
+  transform: translateY(0);
+  animation: fall 3s linear;
+}
+
+@keyframes fall {
+  to {
+    transform: translateY(105vh);
+  }
+}

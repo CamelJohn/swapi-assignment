@@ -1,0 +1,67 @@
+.Table tr,
+th,
+td {
+  padding: 1em;
+  font-family: arial;
+  text-align: left;
+  user-select: none;
+}
+
+.Table tr,
+th {
+  border: solid 1px white;
+}
+
+.Table table {
+  border-collapse: collapse;
+  color: white;
+}
+
+.Table table thead {
+  box-shadow: inset 1px 2px 15px white;
+}
+
+.row:nth-child(odd) {
+  background: linear-gradient(
+    -135deg,
+    rgba(106, 101, 255, 0.5) 42%,
+    rgba(101, 140, 255, 0.5) 69%,
+    rgba(101, 176, 255, 0.5) 81%
+  );
+}
+
+.row:nth-child(even) {
+  background: linear-gradient(
+    -135deg,
+    rgba(101, 176, 255, 1) 42%,
+    rgba(101, 140, 255, 1) 69%,
+    rgba(106, 101, 255, 1) 81%
+  );
+}
+
+.row:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.multiple {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.innerCell {
+  display: flex;
+  flex-direction: row;
+  gap: 1em;
+}
+
+.innerCell div:nth-child(1) {
+  width: 5em;
+}
+
+.innerCellRow {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}

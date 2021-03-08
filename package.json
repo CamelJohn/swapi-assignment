@@ -1,0 +1,17 @@
+{
+  "name": "tiakl-assignment",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start:client": "cd swapi-client && npm run start",
+    "start:server": "cd swapi-wrapper && npm run dev",
+    "dev": "concurrently npm:start:*"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^6.0.0"
+  }
+}

@@ -1,0 +1,42 @@
+:root {
+  --primary-clr: rgb(39, 77, 114);
+  --secondary-clr: rgb(61, 118, 151);
+}
+
+.Header {
+  padding: 1rem 0;
+  border-bottom: 2px solid var(--primary-clr);
+  width: 80vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Hollow';
+}
+
+.Header .logo {
+  color: rgb(195, 184, 23);
+  font-size: 2em;
+}
+
+.Header .links {
+  font-family: 'Roboto';
+  display: flex;
+  flex-direction: row;
+  gap: 3em;
+}
+
+.Header .links a:hover {
+  color: var(--secondary-clr);
+  transition: 0.5s;
+}
+
+.links a:active,
+.links a.active {
+  color: var(--primary-clr);
+}
+
+.links a {
+  text-decoration: none;
+  color: rgb(195, 184, 23);
+}

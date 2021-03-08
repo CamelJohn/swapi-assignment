@@ -1,0 +1,45 @@
+.Loading {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  gap: 0.25em;
+  width: 100px;
+  height: 100px;
+}
+
+.Loading div {
+  width: 20px;
+  height: 20px;
+  background: linear-gradient(-135deg, rgba(106,101,255,0.5) 42%, rgba(101,140,255,0.5) 69%, rgba(101,176,255,0.5) 81%);
+  /* background: #ffee00; */
+  border-radius: 50%;
+  animation: bouncer .5s cubic-bezier(.19,.57,.3,.98) alternate infinite;
+}
+
+.Loading div:nth-child(2) {
+  animation-delay: 0.1s;
+  opacity: 0.8;
+}
+
+.Loading div:nth-child(3) {
+  animation-delay: 0.2s;
+  opacity: 0.6;
+}
+.Loading div:nth-child(4) {
+  animation-delay: 0.3s;
+  opacity: 0.4;
+}
+
+.Loading div:nth-child(5) {
+  animation-delay: 0.4s;
+  opacity: 0.2;
+}
+
+@keyframes bouncer {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-100px);
+  }
+}

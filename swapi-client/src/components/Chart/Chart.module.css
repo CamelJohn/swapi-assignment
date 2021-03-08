@@ -1,0 +1,12 @@
+.Chart {
+  /* height: 50%; */
+  /* width: 50%; */
+  /* border-left: 2px solid black; */
+  /* border-bottom: 2px solid black; */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 3em;
+}
+
