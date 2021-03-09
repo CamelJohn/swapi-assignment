@@ -10,6 +10,7 @@ const Table = () => {
     if (!cachedData) {
       (async () => await getData())();
     } else {
+      // implemented a small cache so as not to send more api calls to the backend and to the SWAPI API...
       setTableData(JSON.parse(cachedData));
     }
 
