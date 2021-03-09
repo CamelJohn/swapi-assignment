@@ -4,6 +4,9 @@ import getPilotData from '../api/fetch-pilot-data.js';
 import getPlanetData from '../api/get-chart-data.js';
 
 export default {
+  /**
+   * @description endpoint for scrolling text from SWAPI
+   */
   getScrollingText: async (req, res, next) => {
     try {
       const scrollingTextArray = await getText();
@@ -17,6 +20,9 @@ export default {
       throw err;
     }
   },
+  /**
+   * @description endpoint to handle the table data, manipulate it and return it as one big array of object to the frontend
+   */
   getTableData: async (req, res, next) => {
     try {
       const vehicleData = await getData('vehicles');
@@ -27,6 +33,9 @@ export default {
       throw err;
     }
   },
+  /**
+   * @description route to fetch relevant data for the chart in the frontend
+   */
   getChartData: async (req, res, next) => {
     try {
       const getChartData = await getPlanetData();

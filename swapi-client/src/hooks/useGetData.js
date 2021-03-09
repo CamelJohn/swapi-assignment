@@ -10,6 +10,8 @@ import instance from "../axios";
  * 
  * the 'instance' uses axios under the hood and calls a nodejs server that i spun up to handle the formatting of requests to SWAPI
  * (found it to be much easyer for me).
+ * 
+ * BTW i never used hooks before (usually redux & tools or useState)
  */
 
 const useGetData = module => {
@@ -58,6 +60,8 @@ const useGetData = module => {
     }, 1000);
   };
   return [timer, cachedData, getData, fetching, tableData, setTableData];
+    default:
+      return []
   }
 }
 
